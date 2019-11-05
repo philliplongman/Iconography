@@ -7,6 +7,7 @@ gem "rails", "~> 6.0.0"
 
 gem "bootsnap", ">= 1.4.2", require: false
 gem "bulma-rails"
+gem "font-awesome-sass", "~> 5.11.2"
 gem "pg", ">= 0.18", "< 2.0"
 gem "puma", "~> 3.11"
 gem "responders"
