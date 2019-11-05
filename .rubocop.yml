@@ -1,0 +1,44 @@
+AllCops:
+  Exclude:
+    - db/migrate/**/*
+    - db/schema.rb
+    - node_modules/**/*
+
+Layout/AlignArguments:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/AlignHash:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: empty_lines_special
+
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: false
+
+Layout/EmptyLinesAroundModuleBody:
+  EnforcedStyle: empty_lines_special
+
+Metrics/BlockLength:
+  ExcludedMethods:
+    - config
+    - configure
+
+Metrics/LineLength:
+  Max: 90
+
+Style/Documentation:
+  Enabled: false
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
