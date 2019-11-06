@@ -30,6 +30,8 @@ Metrics/BlockLength:
 
 Metrics/LineLength:
   Max: 90
+  Exclude:
+    - config/initializers/**/*
 
 Style/Documentation:
   Enabled: false
