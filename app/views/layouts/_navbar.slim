@@ -1,0 +1,37 @@
+nav.navbar aria-label="main navigation" role="navigation"
+
+  .navbar-brand
+    a.navbar-item.logo href=root_path
+      = image_tag "archmage-engine", alt: "logo"
+      .title.is-2 Icon·o·grapher
+    a.navbar-burger.burger aria-expanded="false" aria-label="menu" data-target="navbarBasicExample" role="button"
+      span aria-hidden="true"
+      span aria-hidden="true"
+      span aria-hidden="true"
+
+  .navbar-menu
+
+    .navbar-start
+      .navbar-item.has-dropdown.is-hoverable
+        a.navbar-link My Campaigns
+        .navbar-dropdown
+          - if @campaigns.present?
+            - @campaigns.find_each do |campaign|
+              = link_to campaign.name, campaign, class: "navbar-item"
+          - else
+            .navbar-item.has-text-grey-light No campaigns to display
+          hr.navbar-divider
+          a.navbar-item
+            = icon "fas", "plus"
+            | Add new campaign
+
+    .navbar-end
+      .navbar-item
+        .buttons
+          - if current_user
+            = link_to destroy_user_session_path, method: :delete, class: %w(button is-primary)
+              strong Log out
+          - else
+            = link_to new_user_registration_path, class: %w(button is-primary)
+              strong Sign up
+            = link_to "Log in", new_user_session_path, class: %w(button is-light)

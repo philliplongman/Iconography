@@ -1,0 +1,22 @@
+.navbar {
+
+  .logo {
+    margin-right: 1.5rem;
+  }
+
+  .logo img {
+    margin-bottom: .4rem;
+    margin-right: .65rem;
+    max-height: 4rem;
+  }
+
+  .logo .title {
+    font-family: "traditio";
+  }
+
+  .navbar-item i {
+    color: $link;
+    margin-right: 6px;
+  }
+
+}
