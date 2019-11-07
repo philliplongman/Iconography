@@ -1,8 +1,6 @@
 @import "colors";
 @import "fonts";
 
-// Bulma variables
-
 $primary: $gold;
 $link:    $blue;
 $info:    $cyan;
@@ -13,3 +11,6 @@ $dark:    $grey-darker;
 $text:    $grey-dark;
 
 $light:   $grey-lighter;
+
+@import "devise";
+@import "forms";

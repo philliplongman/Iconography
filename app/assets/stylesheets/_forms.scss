@@ -1,0 +1,36 @@
+form {
+
+  input[type="submit"] {
+    @extend .is-link;
+  }
+
+  label.checkbox input {
+    margin-right: .25rem;
+  }
+
+  .cancel-button {
+    @extend .is-link;
+    @extend .is-light;
+  }
+
+  .error-notification {
+    color: $danger;
+    font-weight: bold;
+    margin-bottom: .75rem;
+  }
+
+  .form-actions {
+    @extend .field;
+    @extend .is-grouped;
+  }
+
+  .form-inputs + .form-actions {
+    margin-top: 1rem;
+  }
+
+  .link-button {
+    @extend .is-white;
+    @extend .has-text-link;
+  }
+
+}
