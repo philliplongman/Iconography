@@ -3,9 +3,9 @@
 
 $primary: $gold;
 $link:    $blue;
-$info:    $cyan;
+$info:    $blue-light;
 $success: $green;
-$warning: $yellow;
+$warning: $gold-light;
 $danger:  $red;
 $dark:    $grey-darker;
 $text:    $grey-dark;
@@ -14,3 +14,4 @@ $light:   $grey-lighter;
 
 @import "devise";
 @import "forms";
+@import "notifications";

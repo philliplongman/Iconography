@@ -24,6 +24,8 @@ $blue:          hsl(217, 71%,  53%) !default;
 $purple:        hsl(271, 100%, 71%) !default;
 $red:           hsl(0, 100%, 45%)   !default;
 
+$blue-lighter:  lighten($blue, 30)  !default;
+$blue-light:    lighten($blue, 20)  !default;
 $blue-dark:     darken($blue, 20)   !default;
 $blue-darker:   darken($blue, 30)   !default;
 
