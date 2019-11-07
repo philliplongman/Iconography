@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title Icon·o·graphy
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload"
+    = javascript_pack_tag "application", "data-turbolinks-track": "reload"
+
+    meta content="width=device-width, initial-scale=1" name="viewport"
+
+  body
+    section.flash
+      - if notice
+        .notice = notice
+      - if alert
+        .alert = alert
+
+    = render "layouts/navbar"
+
+    section.section
+      .container
+        == yield
