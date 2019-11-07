@@ -7,10 +7,6 @@ AllCops:
 Layout/AlignArguments:
   EnforcedStyle: with_fixed_indentation
 
-Layout/AlignHash:
-  EnforcedHashRocketStyle: table
-  EnforcedColonStyle: table
-
 Layout/AlignParameters:
   EnforcedStyle: with_fixed_indentation
 
@@ -22,6 +18,10 @@ Layout/EmptyLinesAroundBlockBody:
 
 Layout/EmptyLinesAroundModuleBody:
   EnforcedStyle: empty_lines_special
+
+Layout/HashAlignment:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
 
 Metrics/BlockLength:
   ExcludedMethods:
