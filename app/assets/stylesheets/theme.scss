@@ -35,8 +35,12 @@ $title-color: $blue-dark;
 
 // Misc ------------------------------------------------------------------------
 
-.container.has-margins {
+.container.standard-width {
   max-width: 1152px;
+}
+
+.container.half-width {
+  max-width: 576px;
 }
 
 
