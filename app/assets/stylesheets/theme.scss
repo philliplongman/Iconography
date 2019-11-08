@@ -1,5 +1,14 @@
+// Fonts -----------------------------------------------------------------------
+
+@font-face {
+  font-family: "deutsch";
+  src: font-url("Deutsch.ttf");
+}
+
+
+// Colors ----------------------------------------------------------------------
+
 @import "colors";
-@import "fonts";
 
 $primary: $gold;
 $link:    $blue;
@@ -11,6 +20,20 @@ $dark:    $grey-darker;
 $text:    $grey-dark;
 
 $light:   $grey-lighter;
+
+
+// Titles ----------------------------------------------------------------------
+
+$title-family: "deutsch";
+$title-weight: normal;
+$title-color: $blue-dark;
+
+.title {
+  word-spacing: -.25em;
+}
+
+
+// Partials --------------------------------------------------------------------
 
 @import "devise";
 @import "forms";
