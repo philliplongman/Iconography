@@ -5,9 +5,11 @@ module ApplicationHelper
     simple_form_for(object, *args, **opts, &block)
   end
 
-  def cancel_button(text = "Cancel")
+  def cancel_button(text = "Cancel", **actions)
+    paths = HashWithIndifferentAccess.new(:back).merge(actions)
+
     tag.div class: "control" do
-      link_to text, :back, class: %w[button cancel-button]
+      link_to text, paths[controller.action_name], class: %w[button cancel-button]
     end
   end
 

@@ -1,0 +1,9 @@
+.campaign-form
+  = bulma_form_for @campaign do |f|
+    .form-inputs
+      = f.input :name
+      = f.input :description
+
+    .form-actions
+      = f.button :submit
+      = cancel_button(new: :root, edit: @campaign)

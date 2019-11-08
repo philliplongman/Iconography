@@ -4,6 +4,6 @@ Rails.application.routes.draw do
 
   root "homes#index"
 
-  resources :campaigns, only: %i[show new create]
+  resources :campaigns, only: %i[show new create edit update]
 
 end
