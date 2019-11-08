@@ -14,11 +14,10 @@ html
     = render "layouts/navbar"
 
     main
-      section.section
-        .flash-messages.container
-          - if notice
-            .message.is-info: .message-body = notice
-          - if alert
-            .message.is-danger: .message-body = alert
+      .flash-messages.container
+        - if notice
+          .message.is-info: .message-body = notice
+        - if alert
+          .message.is-danger: .message-body = alert
 
       == yield
