@@ -24,11 +24,10 @@ $light:   $grey-lighter;
 
 // Titles ----------------------------------------------------------------------
 
-$title-family: "deutsch";
-$title-weight: normal;
-$title-color: $blue-dark;
-
-.title {
+.title.is-fancy {
+  color: $blue-dark;
+  font-family: "deutsch";
+  font-weight: normal;
   word-spacing: -.25em;
 }
 
