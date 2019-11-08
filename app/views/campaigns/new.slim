@@ -1,0 +1,14 @@
+.campaign
+  section.section
+    .container.half-width
+      h3.title.is-fancy.is-3 Add a new campaign
+
+      .campaign-form
+        = bulma_form_for @campaign do |f|
+          .form-inputs
+            = f.input :name
+            = f.input :description, input_html: { rows: 5 }
+
+          .form-actions
+            = f.button :submit
+            = cancel_button
