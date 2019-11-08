@@ -11,14 +11,16 @@ html
     meta content="width=device-width, initial-scale=1" name="viewport"
 
   body
-    section.flash
-      - if notice
-        .notice = notice
-      - if alert
-        .alert = alert
-
     = render "layouts/navbar"
 
-    section.section
-      .container
-        == yield
+    main
+      section.section
+        .flash-messages.container
+          - if notice
+            .message.is-info: .message-body = notice
+          - if alert
+            .message.is-danger: .message-body = alert
+
+      section.section
+        .container
+          == yield
