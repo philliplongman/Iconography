@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: campaigns
+#
+#  id          :integer          not null, primary key
+#  name        :string           not null
+#  description :text
+#  user_id     :integer          not null
+#  timestamps  :string
+#
+# Indexes
+#
+#  index_campaigns_on_name_and_user_id  (name,user_id) UNIQUE
+#  index_campaigns_on_user_id           (user_id)
+#
+
+class Campaign < ApplicationRecord
+  belongs_to :user
+
+  validates :name, presence: true
+  validates :name, uniqueness: { scope: :user }
+
+end

@@ -14,13 +14,12 @@ nav.navbar aria-label="main navigation" role="navigation"
       .navbar-item.has-dropdown.is-hoverable
         a.navbar-link My Campaigns
         .navbar-dropdown
-          - if @campaigns.present?
-            - @campaigns.find_each do |campaign|
-              = link_to campaign.name, campaign, class: "navbar-item"
-          - else
+          - @campaign_menu.find_each do |campaign|
+            = link_to campaign.name, campaign, class: "navbar-item"
+          - if @campaign_menu.empty?
             .navbar-item.has-text-grey-light No campaigns to display
           hr.navbar-divider
-          a.navbar-item
+          a.navbar-item href=new_campaign_path
             span.icon = icon "fas", "plus"
             | Add new campaign
 
