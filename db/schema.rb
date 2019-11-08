@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_07_041112) do
+ActiveRecord::Schema.define(version: 2019_11_08_232224) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,17 @@ ActiveRecord::Schema.define(version: 2019_11_07_041112) do
     t.string "timestamps"
     t.index ["name", "user_id"], name: "index_campaigns_on_name_and_user_id", unique: true
     t.index ["user_id"], name: "index_campaigns_on_user_id"
+  end
+
+  create_table "icons", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "blurb", limit: 1000
+    t.text "description"
+    t.bigint "campaign_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["campaign_id"], name: "index_icons_on_campaign_id"
+    t.index ["name", "campaign_id"], name: "index_icons_on_name_and_campaign_id", unique: true
   end
 
   create_table "users", force: :cascade do |t|
@@ -37,4 +48,5 @@ ActiveRecord::Schema.define(version: 2019_11_07_041112) do
   end
 
   add_foreign_key "campaigns", "users", on_delete: :cascade
+  add_foreign_key "icons", "campaigns", on_delete: :cascade
 end

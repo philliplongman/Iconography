@@ -17,6 +17,8 @@
 class Campaign < ApplicationRecord
   belongs_to :user
 
+  has_many :icons, dependent: :destroy
+
   validates :name, presence: true
   validates :name, uniqueness: { scope: :user }
 
