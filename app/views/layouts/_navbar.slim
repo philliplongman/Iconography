@@ -15,7 +15,7 @@ nav.navbar aria-label="main navigation" role="navigation"
         a.navbar-link My Campaigns
         .navbar-dropdown
           - @campaign_menu.find_each do |campaign|
-            = link_to campaign.name, campaign, class: "navbar-item"
+            = link_to campaign.name, "", class: "navbar-item"
           - if @campaign_menu.empty?
             .navbar-item.has-text-grey-light No campaigns to display
           hr.navbar-divider

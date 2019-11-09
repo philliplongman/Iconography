@@ -13,14 +13,14 @@
 
   section.campaign-tabs.section
     .container.standard-width
-      .tabs
+      .tabs.is-marginless
         ul
           li.is-active
-            a
+            = link_to campaign_graph_path(@campaign)
               span.icon.is-small = icon "fas", "project-diagram"
               | Graph
           li
-            a
+            = link_to campaign_icons_path(@campaign)
               span.icon.is-small = icon "fas", "crown"
               | The Icons
           li
@@ -31,3 +31,5 @@
             a
               span.icon.is-small = icon "fas", "hat-wizard"
               | Domains & Affinites
+
+      .box

@@ -34,6 +34,12 @@ $light:   $grey-lighter;
 
 // Misc ------------------------------------------------------------------------
 
+// reduce size of box's shadow
+.box {
+  box-shadow: 0 0.5em 0.75em -0.125em rgba(10, 10, 10, 0.1),
+              0 0px 0 1px rgba(10, 10, 10, 0.02)
+}
+
 .container.standard-width {
   max-width: 1152px;
 }
