@@ -6,7 +6,8 @@
 #  name        :string           not null
 #  description :text
 #  user_id     :integer          not null
-#  timestamps  :string
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
 #
 # Indexes
 #
