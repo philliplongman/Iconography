@@ -1,18 +1,19 @@
 .navbar {
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+              0 0px 0 1px rgba(10, 10, 10, 0.02);
+}
 
-  .logo {
-    margin-right: 1.5rem;
-  }
+.navbar .logo {
+  margin-right: 1.5rem;
+}
 
-  .logo img {
-    margin-bottom: .4rem;
-    margin-right: .65rem;
-    max-height: 4rem;
-  }
+.navbar .logo img {
+  margin-bottom: .4rem;
+  margin-right: .65rem;
+  max-height: 4rem;
+}
 
-  .navbar-item i {
-    color: $link;
-    margin-right: 6px;
-  }
-
+.navbar .navbar-item i {
+  color: $link;
+  margin-right: 6px;
 }
