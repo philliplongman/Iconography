@@ -7,14 +7,14 @@
   padding-top: 0;
 }
 
-.view-title {
+.view-title .edit {
+  text-align: left;
 
-  .edit {
-    text-align: left;
-
-    @include from($tablet) {
-      text-align: right;
-    }
+  @include from($tablet) {
+    text-align: right;
   }
+}
 
+.content-box {
+  padding: 2rem;
 }

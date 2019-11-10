@@ -10,9 +10,9 @@ section.section
             span.icon.is-medium = icon "fas", "pencil-alt"
             | Edit
 
-section.campaign-tabs.section
+section.section
   .container.standard-width
-    .tabs
+    .campaign-tabs.tabs
       ul
         li class=%(#{"is-active" if tab == :graph})
           = link_to campaign_graph_path(@campaign)

@@ -22,13 +22,18 @@ $text:    $grey-dark;
 $light:   $grey-lighter;
 
 
-// Titles ----------------------------------------------------------------------
+// Text __----------------------------------------------------------------------
 
 .title.is-fancy {
   color: $blue-dark;
   font-family: "deutsch";
   font-weight: normal;
   word-spacing: -.25em;
+}
+
+// don't change the color of content inside a link
+a .content {
+  color: $text;
 }
 
 
@@ -46,6 +51,12 @@ $light:   $grey-lighter;
 
 .container.half-width {
   max-width: 576px;
+}
+
+// extend .is-rounded to links
+a.is-rounded {
+  border-radius: 100%;
+  display: block;
 }
 
 
