@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   root "homes#index"
 
-  resources :campaigns, only: %i[new create edit update]
+  resources :campaigns, only: %i[new create edit update] do
+    resource :graph, only: %i[show]
+  end
 
 end

@@ -15,21 +15,22 @@
     .container.standard-width
       .tabs.is-marginless
         ul
-          li.is-active
+          li class=%(#{"is-active" if tab == :graph})
             = link_to campaign_graph_path(@campaign)
               span.icon.is-small = icon "fas", "project-diagram"
               | Graph
-          li
+          li class=%(#{"is-active" if tab == :icons})
             = link_to campaign_icons_path(@campaign)
               span.icon.is-small = icon "fas", "crown"
               | The Icons
-          li
+          li class=%(#{"is-active" if tab == :alliances})
             a
               span.icon.is-small = icon "fas", "scroll"
               | Alliances
-          li
+          li class=%(#{"is-active" if tab == :domains})
             a
               span.icon.is-small = icon "fas", "hat-wizard"
               | Domains & Affinites
 
       .box
+        == yield
