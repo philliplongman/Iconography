@@ -1,36 +1,35 @@
-.campaign
-  section.section
-    .container.view-title.standard-width
-      .columns
-        .column.is-11
-          h3.title.is-fancy.is-3 = @campaign.name
-          h5.subtitle.is-5 = @campaign.description
-        .column.is-1
-          .edit
-            = link_to edit_campaign_path(@campaign)
-              span.icon.is-medium = icon "fas", "pencil-alt"
-              | Edit
+section.section
+  .container.view-title.standard-width
+    .columns
+      .column.is-11
+        h3.title.is-fancy.is-3 = @campaign.name
+        h5.subtitle.is-5 = @campaign.description
+      .column.is-1
+        .edit
+          = link_to edit_campaign_path(@campaign)
+            span.icon.is-medium = icon "fas", "pencil-alt"
+            | Edit
 
-  section.campaign-tabs.section
-    .container.standard-width
-      .tabs.is-marginless
-        ul
-          li class=%(#{"is-active" if tab == :graph})
-            = link_to campaign_graph_path(@campaign)
-              span.icon.is-small = icon "fas", "project-diagram"
-              | Graph
-          li class=%(#{"is-active" if tab == :icons})
-            = link_to campaign_icons_path(@campaign)
-              span.icon.is-small = icon "fas", "crown"
-              | The Icons
-          li class=%(#{"is-active" if tab == :alliances})
-            a
-              span.icon.is-small = icon "fas", "scroll"
-              | Alliances
-          li class=%(#{"is-active" if tab == :domains})
-            a
-              span.icon.is-small = icon "fas", "hat-wizard"
-              | Domains & Affinites
+section.campaign-tabs.section
+  .container.standard-width
+    .tabs
+      ul
+        li class=%(#{"is-active" if tab == :graph})
+          = link_to campaign_graph_path(@campaign)
+            span.icon.is-small = icon "fas", "project-diagram"
+            | Graph
+        li class=%(#{"is-active" if tab == :icons})
+          = link_to campaign_icons_path(@campaign)
+            span.icon.is-small = icon "fas", "crown"
+            | The Icons
+        li class=%(#{"is-active" if tab == :alliances})
+          a
+            span.icon.is-small = icon "fas", "scroll"
+            | Alliances
+        li class=%(#{"is-active" if tab == :domains})
+          a
+            span.icon.is-small = icon "fas", "hat-wizard"
+            | Domains & Affinites
 
-      .box
-        == yield
+    .content-box.box
+      == yield
