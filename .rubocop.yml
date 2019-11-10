@@ -42,5 +42,8 @@ Style/EmptyMethod:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+Style/NestedParenthesizedCalls:
+  Enabled: false
+
 Style/StringLiterals:
   EnforcedStyle: double_quotes
