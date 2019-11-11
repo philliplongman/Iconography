@@ -1,17 +1,21 @@
 = render layout: "campaigns/header", locals: { tab: :icons }
+  .buttons.is-right
+    = link_to new_campaign_icon_path(@campaign), class: "button is-primary is-rounded"
+      span.icon.small = icon("fas", "plus")
+      span Add a new Icon
   .age-icon-collection
     .tile.is-ancestor.is-vertical
-      - @icons.in_groups_of(2, false) do |pair|
+      - @age_icons.in_groups_of(2, false) do |pair|
         .tile.is-parent
-          - pair.each do |icon|
+          - pair.each do |age_icon|
             .tile.is-child.is-6
               .age-icon
-                = link_to campaign_icon_path(@campaign, icon)
+                = link_to campaign_icon_path(@campaign, age_icon)
                   .columns
                     .column.is-narrow
                       figure.age-icon-portrait.image.is-128x128
                         = image_tag "portrait-placeholder", class: "is-rounded"
                     .column
                       .age-icon-info.content
-                        h4.title.is-4.is-fancy = icon.name
-                        p = icon.blurb
+                        h4.title.is-4.is-fancy = age_icon.name
+                        p = age_icon.blurb
