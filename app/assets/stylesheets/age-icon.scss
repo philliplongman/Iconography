@@ -5,3 +5,16 @@
 .age-icon-info .title {
   margin-bottom: .5rem
 }
+
+.age-icon-collection .is-divider {
+  border-width: 0.075rem;
+  margin: 0 0 .5rem;
+
+  &:first-of-type {
+    display: none;
+  }
+
+  &.is-hidden-touch {
+    margin: 0 1rem .5rem;
+  }
+}
