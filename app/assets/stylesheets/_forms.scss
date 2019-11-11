@@ -22,6 +22,8 @@ form {
   .form-actions {
     @extend .field;
     @extend .is-grouped;
+
+    margin-top: 1.5rem;
   }
 
   .form-inputs + .form-actions {
