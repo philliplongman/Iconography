@@ -1,8 +1,45 @@
 the_elf_queen:
   name: The Elf Queen
-  blurb: >
+
+  summary: >
     The Elf Queen rules the Court of Stars, the one place where wood elves,
     dark elves, and high elves come together as peers and allies instead of as
     rivals or enemies. Honed by centuries of experience, the Queen’s innate
     magic at least equals the Archmage’s spells.
-  description:
+
+  quote: >
+    “We accept your most gracious offer of an invitation, my dear cousin.”
+
+  usual_location: >
+    In the Court in Queen’s Wood, north of Drakkenhall and Concord.
+
+  common_knowledge: >
+    The Queen is mystically connected to every elf, and so every elf is
+    mystically connected to every other elf.
+
+  adventurers: >
+    Elf adventurers consider it an honor to work for the Queen, and non-elf
+    adventurers consider it something of a miracle. Elf adventurers may find
+    themselves guided by the Queen’s dream sendings to join the perilous 
+    adventures of other elves who need their help.
+
+  allies: >
+    The High Druid is figuratively her half-sister of the woods. The blood truce
+    with the Dwarf King has created a long and prosperous peace, but the truce
+    is technically temporary. The Emperor is a trusted ally, but the Emperor’s
+    Priestess and Archmage can be wearisome.
+
+  enemies: >
+    The Orc Lord is the elves’ shame because they created the original. It may
+    fall to the Queen to dispatch him. The Dwarf King should be her mortal
+    enemy, but an ages- old truce has preserved the peace. The Three resent the
+    Queen for imprisoning the Green.
+
+  history: >
+    There is always an Elf King or Queen, though sometimes they are hidden and
+    unknown. The current Queen has ruled for most of the current age.
+
+  true_danger: >
+    Everything will be all right so long as the dark elves remain out of favor
+    in the Court, so that the Elf Queen sees little reason to exact bloody
+    vengeances for ancient slights remembered only by the elves.

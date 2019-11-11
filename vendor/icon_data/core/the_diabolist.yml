@@ -1,6 +1,7 @@
 the_diabolist:
   name: The Diabolist
-  blurb: >
+
+  summary: >
     The Diabolist controls fiends and tampers with forces even the Archmage
     avoids. She likes her victims screaming and her chaos pure while claiming
     that the demons she summons would otherwise overwhelm the Great Gold Wyrm
@@ -8,4 +9,71 @@ the_diabolist:
     First, she likes keeping destruction personal rather than universal.
     Second, she’s capable of kindness, so long as it comes as a great
     surprise.
-  description:
+
+  quote: >
+    “Why do you mortals take these blood feuds so seriously? Don’t you see it’s
+    all just a game? Don’t you realize that I’ve already won?”
+
+  usual_location: >
+    She is known to live in Hell Marsh, purportedly in a hellhole rife with
+    ungodly flowers.
+
+  common_knowledge: >
+    The longer she lives, the more this Diabolist looks like one of her demons.
+    The stories are that she was originally a human woman, but you’d be
+    hard-pressed to prove it.
+
+    If the Diabolist has overarching goals, they are obscure. What’s clear is
+    the delight she takes in wielding power and unleashing chaos. Her enemies
+    say that she may be nothing more than a slave to the vast powers she dares
+    to command, but as long as she’s smiling she seems to have the upper hand.
+
+    The Diabolist leads a scattered and half-mad crew of fiendish cultists. They
+    adore her with respect that borders on worship. In turn, she alternately
+    exalts them and brings them to ruin. With her help, they learn occult
+    secrets, master unspeakable magic, and gloat over the destruction of their
+    enemies. No cultist knows the extent of the cult or its ultimate goals. It
+    is certainly more widespread than the imperial authorities admit to
+    publicly.
+
+    The Diabolist lacks the focus and discipline that define the Crusader. She
+    is in it for herself, and she indulges even her petty whims. If she remained
+    on-task the way the Crusader does, things would doubtless be a lot worse.
+    Unless indulging her whims is actually part of a subtle plot that none can
+    guess at until it is too late.
+
+  adventurers: >
+    Too many adventurers accept missions on the Diabolist’s behalf, often
+    because they are reckless. If adventurers knew what was best for them, they
+    would probably have chosen safer careers than adventuring. Still, a few
+    lucky adventurers have profited mightily from her sponsorship, and they love
+    to show off the remarkable weapons and talismans that they have acquired in
+    consideration for their services.
+
+    Adventurers who work for the Diabolist for long suspect that her chaotic
+    whims and petty vendettas are cover for howling insanity. There are ranks of
+    fiendish cultists hidden behind the gloating cultists who are easy to spot
+    and kill. The deeper you go the more disturbing and insane the experience
+    becomes.
+
+  allies: >
+    The Diabolist and the Prince of Shadows are said to work together. Everyone
+    else hopes they’re going to betray each other. They hope that a lot.
+
+  enemies: >
+    The Crusader is the Diabolist’s worst nightmare, and she’s no big fan of the
+    Great Gold Wyrm, either. The Priestess protects good people from corruption,
+    making her a real annoyance.
+
+  history: >
+    It seems there’s always a Diabolist or at least someone who claims the
+    title. Each of these twisted villains has been different from the ones that
+    came before them. Embracing chaos amplifies a mortal’s personal traits,
+    making each Diabolist unique. Usually a Diabolist is something of a rumor
+    and a mystery, more a legend than a force to be reckoned with.
+    Unfortunately, the current Diabolist has proven herself to be much more than
+    a story to frighten children with.
+
+  true_danger: >
+    Everything will be all right provided that the Diabolist remains unable to
+    corrupt the Emperor or other icons.

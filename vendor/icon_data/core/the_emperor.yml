@@ -1,8 +1,47 @@
 the_emperor:
   name: The Emperor
-  blurb: >
+
+  summary: >
     The Emperor rules the world’s greatest human kingdom, known as the Dragon
     Empire for the mounts of its mightiest warriors. All the signs suggest
     that the age is turning, but will the Empire fall or shift to a new
     balance?
-  description:
+
+  quote: >
+    “As long as I draw breath, the Empire is safe.”
+
+  usual_location: >
+    Axis, the capital of the Dragon Empire.
+
+  common_knowledge: >
+    The Dragon Emperor hails from a long line of noble rulers. It is his nature
+    to lead. To the civilized people, he is the champion of their safety and
+    prosperity.
+
+  adventurers: >
+    Adventurers are routinely hired by imperial functionaries to carry out all
+    manner of ad hoc missions. Adventurers who work exclusively for the Emperor
+    are rewarded with increased pay and greater status, though other adventurers
+    are likely to label them as imperial functionaries.
+
+  allies: >
+    The Archmage and Priestess work closely with the Emperor. The Crusader and
+    Great Gold Wyrm ostensibly are duty-bound to the Emperor, but they interpret
+    that duty as they each see fit. The Dwarf King and Elf Queen are united with
+    the Emperor in pursuit of peace and security.
+
+  enemies: >
+    The Lich King explicitly claims continued authority over the Empire, a
+    treasure he seeks to reclaim from the Dragon Emperors. The Orc Lord seems
+    destined to face the Emperor, as the previous Orc Lord faced the Wizard
+    King.
+
+  history: >
+    Ever since the first Dragon Emperor established the Imperial Seal, there has
+    always been a Dragon Emperor. Elaborate and exacting ceremonies ensure that
+    the power and authority of the original Emperor live on. The current Emperor
+    is capable but essentially unproven.
+
+  true_danger: >
+    Everything will be all right as long as the Emperor stands stalwart between
+    civilization and chaos.

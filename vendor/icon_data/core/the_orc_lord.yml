@@ -1,7 +1,53 @@
 the_orc_lord:
   name: The Orc Lord
-  blurb: >
+
+  summary: >
     The Orc Lord is a figure of legend. The last time he walked the land the
     Lich King fell, in part because of the Orc Lord’s attack. Who will fall
     before his hordes this time? Who won’t?
-  description:
+
+  quote: >
+    “I love cities. They burn.”
+
+  usual_location: >
+    On the outskirts of civilization, probably but not definitely in the North
+    or the West.
+
+  common_knowledge: >
+    Orcs have always been a problem for the Empire, but not like the plague they
+    are now. The idea that there is a true icon leading the orcs now makes
+    terrible sense, given the number of villages being lost on the frontier and
+    the increasing dangers of the wilderness. Most people think there may have
+    been an Orc Lord at some point in the past, but only elves, historians, and
+    people who pay attention to the world’s real problems are aware that the Orc
+    Lord is a problem that has returned from the times of the war with the
+    Wizard King.
+
+  adventurers: >
+    Adventurers who like plunder more than law have joined up with the Orc Lord.
+    Lawful and good adventurers are making their way to face the Orc Lord, but
+    without much enthusiasm, since so much of the loot the orcs take gets
+    spoiled quickly.
+
+  allies: >
+    The Orc Lord is a big unknown. This icon has shown up only once before, so
+    it’s hard to predict what he will do. Destruction is clearly in the cards,
+    and the other icons are mostly sensible enough not to cozy up to the Orc
+    Lord. That doesn’t mean they won’t try to use him to their advantage.
+
+  enemies: >
+    The Orc Lord helped bring down the Lich King before, when he was the Wizard
+    King, so there’s bad karma between them. As a creation of the ancient elves,
+    the Orc Lord has a special thirst for the Elf Queen’s blood. It’s the
+    Emperor’s duty to defend the Empire against the Orc Lord. And the Dwarf King
+    takes the Orc Lord’s claim on the mountains and the lands of the North as a
+    personal affront.
+
+  history: >
+    The elves (or perhaps some rogue faction within the elves) seem to have
+    created the original Orc Lord as part of a successful bid to take down the
+    Wizard King. No Orc Lord has appeared in the ages since then until now.
+
+  true_danger: >
+    Without allies, the Orc Lord will dash his army against the Empire and die
+    before he sees Axis. With allies…

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_08_235326) do
+ActiveRecord::Schema.define(version: 2019_11_11_170343) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,10 +26,17 @@ ActiveRecord::Schema.define(version: 2019_11_08_235326) do
   end
 
   create_table "icons", force: :cascade do |t|
-    t.string "name", null: false
-    t.string "blurb", limit: 1000
-    t.text "description"
     t.bigint "campaign_id", null: false
+    t.string "name", null: false
+    t.string "summary", limit: 1000
+    t.string "quote"
+    t.text "usual_location"
+    t.text "common_knowledge"
+    t.text "adventurers"
+    t.text "allies"
+    t.text "enemies"
+    t.text "history"
+    t.text "true_danger"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["campaign_id"], name: "index_icons_on_campaign_id"

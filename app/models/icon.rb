@@ -2,13 +2,20 @@
 #
 # Table name: icons
 #
-#  id          :integer          not null, primary key
-#  name        :string           not null
-#  blurb       :string(1000)
-#  description :text
-#  campaign_id :integer          not null
-#  created_at  :datetime         not null
-#  updated_at  :datetime         not null
+#  id               :integer          not null, primary key
+#  campaign_id      :integer          not null
+#  name             :string           not null
+#  summary          :string(1000)
+#  quote            :string
+#  usual_location   :text
+#  common_knowledge :text
+#  adventurers      :text
+#  allies           :text
+#  enemies          :text
+#  history          :text
+#  true_danger      :text
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
 #
 # Indexes
 #
@@ -21,7 +28,7 @@ class Icon < ApplicationRecord
 
   validates :name, presence: true
   validates :name, uniqueness: { scope: :campaign }
-  validates :blurb, length: { maximum: 1000 }
+  validates :summary, length: { maximum: 1000 }
 
   scope :sorted, -> { order :name }
 

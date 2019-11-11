@@ -1,8 +1,42 @@
 the_priestess:
   name: The Priestess
-  blurb: >
+
+  summary: >
     The Priestess hears all the Gods of Light and speaks for those who please
     her. She is part oracle, part mystic, and part metaphysical engineer,
     since she created the Cathedral, an ever-expanding temple with rooms or
     entire wings for each of the faiths she favors.
-  description:
+
+  quote: >
+    “If you listen carefully, you can hear the world’s song of hope.”
+
+  usual_location: >
+    The Cathedral, a towering edifice in Santa Cora, the City of Temples.
+
+  common_knowledge: >
+    The Priestess and her followers could be the most approachable and humane of
+    the icons. She clearly cares about most everyone, somehow managing to
+    convert that emotion into action and organization that helps the world.
+    She’s giving religion a good name.
+
+  adventurers: >
+    When the Priestess selects heroes of great heart to brave the forces of evil
+    for her, she sends them into danger with miraculous blessings.
+
+  allies: >
+    The Priestess serves the Emperor, alongside the Archmage. The Great Gold
+    Wyrm is on her side in the abstract, but her followers and his have a
+    notorious tendency to rub each other the wrong way.
+
+  enemies: >
+    Villainous icons drive people to the Priestess, where she can protect them.
+    But the Crusader draws people to darkness. His victories are her losses.
+
+  history: >
+    If the Priestess has come to the land in previous ages, it was in some other
+    form, perhaps an oracle. Even so, she seems to be something new under the
+    sun. Some say that she is this age’s embodiment of the Fool.
+
+  true_danger: >
+    As long as the Priestess’s Cathedral unites the people of the Empire,
+    civilization will surely stand.

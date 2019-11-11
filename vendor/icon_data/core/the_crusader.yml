@@ -1,8 +1,73 @@
 the_crusader:
   name: The Crusader
-  blurb: >
+
+  summary: >
     The Crusader is the armored fist of the Dark Gods. So long as followers of
     the Gods of Light stay the hell out of his way, the Crusader turns his
     wrath against the demons that would destroy the world his own gods want to
     rule. Follow the Crusader if you must win at any cost.
-  description:
+    
+  quote: >
+    “I fear nothing, least of all doing what must be done.”
+
+  usual_location: >
+    First Triumph, a fortress in a conquered hellhole near Axis. Or out
+    Crusading.
+
+  common_knowledge: >
+    One way or another, it’s a bad sign that the Crusader is accommodated within
+    the Empire and sometimes even welcomed. It means either that the common
+    people have lost their good sense or that times are so dire that the people
+    will accept the help of a destroyer bound to the Dark Gods.
+
+    If the enemy of your enemy is your friend, then the Crusader is everybody’s
+    friend because demons are everybody’s enemy. The Crusader, however, is the
+    sort of friend who will burn your house to the ground if he finds it
+    tactically necessary.
+
+    The mighty deeds of the Crusader include conquering hellholes and making
+    them his own. The first hellhole he conquered was an especially large and
+    perverted one near the Imperial capital, Axis. It was there that he
+    established his headquarters, known as First Triumph. When he conquers a
+    hellhole, he binds the defeated demons and forces them to garrison the fort
+    he builds or claims at the location.
+
+    The Crusader leads an elite corps of ruthless warriors, spellcasters, and
+    assassins. From him, they learn the lost ways of the Dark Gods, speaking
+    oaths long forbidden to those who walk in the light of day. Critics of the
+    Crusader say that the side effect of this training is to burn all pity and
+    love from the hearts of the crusaders, and indeed a pitiless heart is not a
+    side effect but the very point of the training. Many crusader initiates
+    prove unworthy of the challenge. Those who die in training are perhaps
+    luckier than those who live on, forever haunted by what they learned but
+    failed to master.
+
+  adventurers: >
+    For an adventurer to have undertaken missions sponsored by the Crusader is a
+    cause for bragging rights. Such missions are never mere cakewalks or
+    uneventful garrison duty. The Crusader has stepped on certain toes, and his
+    personal style is unacceptable to certain hosts, so he occasionally hires
+    adventurers from outside his organization to undertake missions in “hostile”
+    territory, such as the Priestess’s Cathedral in Santa Cora or in the
+    vicinity of the Golden Citadel.
+
+  allies: >
+    The Crusader acknowledges the Emperor as the ruler of the land, though some
+    suspect that he would just as soon acknowledge the Lich King as such.
+
+  enemies: >
+    If the Diabolist fears the Crusader, and she probably should, then he’s the
+    only thing in all the worlds that she fears. The Priestess works to protect
+    people from the excesses of the Crusader, to the point of hindering his
+    efforts. The bitter rivalry between the Crusader and the Great Gold Wyrm
+    lacks any formal declaration, but it is as thick as ochre jelly.
+
+  history: >
+    The history books include accounts of imperial champions, but never a hero
+    as dark and forbidding as the Crusader. He might be a new icon, or a
+    recurrent hero icon that has somehow woke up on the dark side of the banner.
+
+  true_danger: >
+    Everything will be all right provided the demons keep the Crusader busy and
+    he has no time to pay attention to second priorities, such as stomping on
+    the face of goodness and light.

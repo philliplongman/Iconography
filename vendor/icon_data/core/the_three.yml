@@ -1,9 +1,54 @@
 the_three:
   name: The Three
-  blurb: >
+
+  summary: >
     The Three were among the first dragons to walk the world. The Red is a
     living engine of destruction. The Blue is a sorceress, perhaps even the
     original mother of all sorcery. The Black is queen of shadows and
     assassins. Unlike the Great Gold Wyrm, who must fight alone, the Three
     have learned to join forces.
-  description:
+
+  quote: >
+    “If the gods didn’t intend for us to eat you, why did they make you taste so
+    good?”
+
+  usual_location: >
+    The Blue is found in Drakkenhall, though she usually finds you first. The
+    Black flits between marsh hunting grounds and evil monasteries in the
+    mountains. The Red is too freaking large to move around the Empire without
+    triggering all the Archmage’s wards, so unless he feels like precipitating a
+    confrontation, he lives where he pleases off the north, west, and east edges
+    of the map.
+
+  common_knowledge: >
+    The Three are the evil counterpoint to the Great Gold Wyrm. They’re not as
+    strong as the Wyrm but they’re also not stuck in the Abyss. And one of the
+    Three, the Blue Sorceress, has somehow forced an entry into the official
+    hierarchy of the Dragon Empire, serving as the Imperial Governor of
+    Drakkenhall under geas from the Emperor and the Archmage. So apparently the
+    Three are only fully evil and dangerous outside of Drakkenhall, and in
+    Drakkenhall they are considered “the establishment.”
+
+  adventurers: >
+    Evil adventurers gain access to secret knowledge, training, or magic by
+    allying themselves with the Three. True heroes make their name fighting
+    against them. The lines are muddier in Drakkenhall.
+
+  allies: >
+    Sometimes the Three hardly seem to be allied to each other, let alone to
+    anyone else.
+
+  enemies: >
+    As the Wizard King, the Lich King killed the White, and he takes inordinate
+    pleasure in turning evil dragons into liches. The Elf Queen holds the Green
+    as a captive, not that the Three or the Elf Queen openly admit it. And, of
+    course, the Great Gold Wyrm is only going to be an enemy.
+
+  history: >
+    In most ages, only one or two of these monsters live up to their epic
+    potential. In this age, all three of them have grown to epic proportions.
+
+  true_danger: >
+    With the Blue suborned by the geas that gives it Drakkenhall, the Three
+    cannot unite to destroy the Empire. Unless the plan is to somehow destroy
+    the Empire from within…

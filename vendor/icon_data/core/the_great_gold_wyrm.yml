@@ -1,9 +1,55 @@
 the_great_gold_wyrm:
   name: The Great Gold Wyrm
-  blurb: >
+
+  summary: >
     The Great Gold Wyrm is the world’s protector and the inspiration for holy
     orders of paladins and independent heroes. Although the Gold Wyrm’s
     physical form seals the gap that prevents the Abyss from erupting into the
     world, his dreams and the agents he employs still move through the world,
     helping those who will fight and even die for what’s right.
-  description:
+
+  quote: >
+    “If you fail me now, then my own sacrifice is also futile.”
+
+  usual_location: >
+    Centuries ago, the Great Gold Wyrm threw itself into the Abyss to prevent
+    the demons of hell from pouring out into the world. The Wyrm’s physical
+    presence and his magical wards are still all that prevents the Abyss from
+    ripping the world wide open.
+
+    Most often the Wyrm remains stationary near the worst of the tears in
+    reality, other times he rampages through a portion of the Abyss slaying
+    demons that have caught his eye. Paladins say that if true heroes can find a
+    way to stop the gap, even for a night and a day, the Great Gold Wyrm would
+    be free to reinvigorate his followers, restore the Golden Citadel, and beat
+    back the Three.
+
+  common_knowledge: >
+    The best and bravest hear the Great Gold Wyrm’s call or receive his visions.
+    They enter into his service as an elite champion, usually but not always as
+    a member of the Golden Order.
+
+  adventurers: >
+    Various orders of paladins and clerics draw inspiration and power from the
+    Great Gold Wyrm, as do mystically chosen individual heroes. In turn, these
+    orders have been known to hire adventuring bands for special purposes.
+
+  allies: >
+    The Golden Order serves the Dragon Empire and its Emperor, albeit at their
+    own discretion.
+
+  enemies: >
+    The Wyrm’s principal enemies are the Diabolist and the Three. Both conflicts
+    have mythical overtones, and like all true myths, there are moments when the
+    great enemies have worked together, such as when the Red Dragon eliminated
+    the demons that had escaped the Abyss, an act of violence that created the
+    Red Wastes.
+
+  history: >
+    There has only ever been one Great Gold Wyrm, from the days when the gods
+    made all the worlds to this very day. And some would say that there’s not
+    much of the Great Gold Wyrm left.
+
+  true_danger: >
+    Everything will be all right unless the Great Gold Wyrm finally loses his
+    battle and the Abyss opens to swallow the world.

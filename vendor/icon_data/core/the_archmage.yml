@@ -1,7 +1,90 @@
 the_archmage:
   name: The Archmage
-  blurb: >
+
+  summary: >
     The Archmage has preserved the Empire for centuries and created
     astonishing new lands. He has also threatened the fabric of reality with
     experiments you’d have to be brilliant or hugely arrogant to attempt.
-  description:
+
+  quote: >
+    “Your pardon, but this is the moment you burst into flames … fireball … and
+    I go save civilization.”
+
+  usual_location: >
+    In Horizon, or (rumor has it) peering out through the eyes of one of his
+    homunculi.
+
+  common_knowledge: >
+    For hundreds of years, one man has held the Empire together— the Archmage.
+    While an everyday wizard works magic that can astound or destroy a crowd,
+    the Archmage casts spells that make the civilized world safe and prosperous.
+    His magic quiets storms, enlivens crops, and staves off plague. The Empire
+    has experienced a steady growth in order, security, and wealth, largely
+    because the Archmage wards off chaos, peril, and calamity.
+
+    The Archmage’s plans and projects are beyond the ken of normal people, but
+    even normal people are part of his schemes. The Empire’s farms plant
+    different crops at different times, all coordinated by the Archmage’s
+    schedule. Merchants and travelers consult the Archmage’s almanacs to find
+    the best times to set sail. But the common people have little appreciation
+    for what the Archmage does for them. People even complain about the
+    Archmage’s instructions, as if he were a capricious bureaucrat in the
+    imperial offices.
+
+    The Archmage maintains the wards that protect the Empire through a series of
+    magical nodes, placed at strategic points across the land. The nodes tap
+    into ley lines, which occur naturally (although the imperial ley lines are
+    better controlled and more powerful) and channel and direct arcane energy
+    from them to the wards.
+
+    The Archmage oversees the School of Imperial Wizardry, though it is run
+    day-to-day by one of his trusted inner circle members. Sometimes this school
+    devotes itself to testing and training those with arcane potential. The
+    imperial wizards are notorious for being tight-lipped about their true
+    intentions, and they lie without compunction to cover their tracks. No one
+    holds it against them; the Archmage knows best.
+
+  adventurers: >
+    Many adventurers long to be hired into the Archmage’s service. His wizards
+    provide powerful arcane support, and they reward adventurers well, but the
+    Archmage’s missions are notoriously obscure. Instead of killing monsters or
+    rescuing damsels, adventurers hired by imperial wizards may find themselves
+    burying ritual items in wastelands or painting sigils on the walls of ruins.
+    Somehow, it’s all very important to the empire.
+
+    The less-known truth is that the Archmage is losing his handle on the
+    multitude of tasks he has taken responsibility for and is forced to trust
+    more and more missions to adventurers and agents while he struggles to deal
+    with the high arcana that only he can survive.
+
+  allies: >
+    The Archmage swears undying fealty to the Emperor. There are legends of past
+    Archmages who have betrayed their imperial oaths, and those legends always
+    end poorly for all concerned. The Archmage and the Priestess, as fellow
+    champions of the Empire, are bound to work together toward common goals.
+    Some say that high-order goals are all the two icons have in common and that
+    they are never seen together at Imperial functions. Others say that they
+    cooperate more than anyone knows and that the Archmage even helped the
+    Priestess build the Cathedral.
+
+  enemies: >
+    Nature, like the High Druid, chafes at the bit that the Archmage has jammed
+    into its mouth. If the Archmage is the enemy of nature, he is careful not to
+    raise the Elf Queen’s ire. The Archmage respects the boundaries of the Elf
+    Queen’s territory, and for her part she has no particular sympathy for
+    nature in the raw.
+
+  history: >
+    As often as not, no mortal is worthy to claim the title of Archmage. An
+    Archmage’s reign lasts for decades or centuries. Eras in which there is an
+    Archmage tend to be times of growth and recovery, though sometimes an
+    Archmage appears in order to prevent the lands from descending into chaos.
+
+    The current Archmage has been in power for centuries, overseeing a gradual
+    increase in general security and prosperity.
+
+  true_danger: >
+    Everything will be all right provided that no catastrophe brings down the
+    Archmage’s power nodes and plunges the Empire into a maelstrom of rampant
+    elementals, natural forces, monsters from the Iron Sea, and demons from the
+    Abyss.

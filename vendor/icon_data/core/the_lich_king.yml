@@ -1,8 +1,53 @@
 the_lich_king:
   name: The Lich King
-  blurb: >
+
+  summary: >
     The Lich King is the lord of the undead, a fallen tyrant who intends to
     conquer the Dragon Empire and restore his ancient kingdom. He’s not
     entirely insane and mostly understands that ruling a kingdom is not the
     same as destroying it.
-  description:
+
+  quote: >
+    “All may hate me, but none may deny me.”
+
+  usual_location: >
+    In the Necropolis, an island in the Midland Sea near Omen Island. Or
+    teleporting into most any other ruin in “his” realm.
+
+  common_knowledge: >
+    During the day, the Empire is a land of light and song. But at night, it is
+    easy to look out one’s window at the moon-touched land and see that it very
+    nearly still belongs to the Lich King.
+
+    Ages ago, the Lich King was the Wizard King, and he ruled all the lands with
+    magic and tyranny. The first Dragon Emperor, the elves, and the dwarves
+    joined forces to defeat him. Ages later, however, the Wizard King returned
+    as the undying Lich King.
+
+    The Lich King commands all undead, to some extent. His power grows when
+    sacrifices to the dead are not maintained and graveyards are desecrated, but
+    even when all rites are properly observed he schemes, betrays, and attacks.
+
+    “By the fist of the lich” is a common macho curse. The magic hand the Lich
+    King wears to replace his missing hand is a fearsome artifact in its own
+    right. Those who would rather not call the Lich King by name refer to him as
+    the One-Eyed King.
+
+  adventurers: >
+    Evil clerics gain power through the Lich King. Wanted criminals have
+    sometimes given their lives to the Lich King rather than to justice.
+
+  allies: >
+    Who would betray life and ally with death?
+
+  enemies: >
+    The Priestess, the Orc Lord, the Elf Queen, the Dwarf King, the Three, the
+    Great Gold Wyrm, and everyone else.
+
+  history: >
+    There has only ever been one Lich King, the former Wizard King of an earlier
+    age.
+
+  true_danger: >
+    As long as the graveyards are maintained and the imperial rituals repeated,
+    the Lich King will never retake his throne.

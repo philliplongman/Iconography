@@ -1,9 +1,46 @@
 the_dwarf_king:
   name: The Dwarf King
-  blurb: >
+
+  summary: >
     The Dwarf King is lord of Forge, the dwarves’ new homeland beneath the
     mountains. He’d love to reclaim the dwarven Underhome lost to war against
     the dark elves and the creatures of the deeps. But now that the Empire is
     stumbling, the dwarves find themselves manning the mountain walls that
     shield the Empire from the orcs and monsters of the north.
-  description:
+
+  quote: >
+    “In the name of the Ancestors of Adamant, I accept the return of these
+    stolen dwarf treasures.”
+
+  usual_location: >
+    Forge, the dwarves’ underground throne city. In rare circumstances he’s been
+    reported seen outside the city.
+
+  common_knowledge: >
+    The Dwarf King is the master of treasures, pressing a claim on all marvels
+    pulled from the earth. His halls are filled with legendary marvels. As the
+    Emperor rules the civilized lands above, the Dwarf King rules the civilized
+    lands below.
+
+  adventurers: >
+    The Dwarf King has the means and the cause to hire mercenaries to represent
+    his interests or retrieve items that the dwarves lay claim to, whether on
+    the surface world or deep underground.
+
+  allies: >
+    The Dwarf King works reliably with the Emperor, and he respects the ages-old
+    truce with the Elf Queen.
+
+  enemies: >
+    When the Elf Queen’s dark elves get out of hand, they are the worst sort of
+    enemy. The Dwarf King has offered a king’s ransom for the head of the Prince
+    of Shadows.
+
+  history: >
+    There is always a Dwarf King. This one has been in place for centuries, and
+    no one would be surprised if he decided to end his reign fighting on the
+    battlefield.
+
+  true_danger: >
+    Everything will be all right provided the Dwarf King does not unseal the
+    Hall of Vengeance and retrieve the legendary Axe of Seven Bloods.

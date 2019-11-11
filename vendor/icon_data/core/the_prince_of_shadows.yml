@@ -1,9 +1,50 @@
 the_prince_of_shadows:
   name: The Prince of Shadows
-  blurb: >
+
+  summary: >
     The Prince of Shadows is part thief, part trickster, and part assassin. To
     some he is a hero; to others a villain. He has squandered the riches of
     the dwarves, murdered the hopes of a dragon, and plundered the dreams of a
     god. His exploits have changed the world, but none can tell you his
     ultimate goals or motives.
-  description:
+
+  quote: >
+    ”Don’t bother thanking me, I already thanked myself to your gold and your
+    lover’s heart.”
+
+  usual_location: >
+    Shadow Port, or anywhere else he cares to be.
+
+  common_knowledge: >
+    Not everyone believes there is a Prince of Shadows. This works out extremely
+    well for the Prince. He doesn’t care about getting credit for his exploits.
+    Consequently, there are places where he’s blamed for every major theft, and
+    other places where he’s viewed as an invention of the Thieves’ Guilds to
+    cover their tracks.
+
+  adventurers: >
+    Adventurers sometimes work for the Prince of Shadows without ever knowing
+    it. In some sense, anyone who accepts one of his gifts is doing the Prince’s
+    work. Other adventurers like the Prince’s style and aim to further his
+    schemes, but that’s a shifty path and what works for an icon can often as
+    not walk an adventurer into a wall of swords.
+
+  allies: >
+    The Diabolist has profited from certain of the Prince’s “transactions,” but
+    the Priestess, at least, believes that the Prince stole more from the
+    Diabolist than the Diabolist suspects. Who can say?
+
+  enemies: >
+    The Dwarf King has offered a king’s-ransom in platinum for the Prince of
+    Shadows’ head, but no one knows why. The Archmage has tried to retrieve
+    certain stolen artifacts from the Prince, but hasn’t claimed success in the
+    endeavor.
+
+  history: >
+    Shadowy figures appear on the margins of official histories. Some of these
+    mysterious figures are previous incarnations of the Prince of Shadows in
+    other guises with other names.
+
+  true_danger: >
+    If the Prince of Shadows ever ends up leading the forces of evil, it’s going
+    to be bad news.
