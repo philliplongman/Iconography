@@ -2,12 +2,7 @@
   padding: 1.5rem 1rem;
 }
 
-.age-icon-info .title {
-  margin-bottom: .5rem
-}
-
 .age-icon-collection .is-divider {
-  border-width: 0.075rem;
   margin: 0 0 .5rem;
 
   &:first-of-type {
@@ -17,4 +12,22 @@
   &.is-hidden-touch {
     margin: 0 1rem .5rem;
   }
+}
+
+.age-icon-form textarea {
+  min-height: 10em;
+}
+
+.age-icon-form .field.icon_portrait {
+  max-height: 14.25rem;
+}
+
+.age-icon-form figure.age-icon-portrait,
+.age-icon-form figure.age-icon-portrait img {
+  height: 12.25rem;
+  width: 12.25rem;
+}
+
+.age-icon-info .title {
+  margin-bottom: .5rem
 }

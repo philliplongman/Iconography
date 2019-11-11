@@ -1,0 +1,26 @@
+.age-icon-form
+  = bulma_form_for [@campaign, @age_icon] do |f|
+    .form-inputs
+      .columns
+        .column
+          = f.input :name
+          .field.icon_portrait
+            label.label Portrait
+            figure.age-icon-portrait.image.is-square
+              = image_tag "portrait-placeholder"
+          = f.input :quote
+          = f.input :summary, as: :text
+          = f.input :usual_location
+          = f.input :common_knowledge
+
+        .is-divider-vertical.is-hidden-touch
+        .column
+          = f.input :adventurers, label: "Adventurers & the Icon"
+          = f.input :allies
+          = f.input :enemies
+          = f.input :history
+          = f.input :true_danger, label: "The true danger"
+
+    .form-actions
+      = f.button :submit
+      = cancel_button(new: campaign_icons_path(@campaign), edit: @age_icon)

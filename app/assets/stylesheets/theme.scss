@@ -44,6 +44,15 @@ $divider-thickness:	        0.75rem;
 $divider-font-size:	        0.75rem;
 $divider-color:	            $grey-light;
 
+.is-divider {
+  border-width: 0.075rem;
+}
+
+.is-divider-vertical::before {
+  border-width: 0.075rem !important;
+}
+
+
 
 // Forms -----------------------------------------------------------------------
 

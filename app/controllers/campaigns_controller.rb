@@ -8,7 +8,7 @@ class CampaignsController < ApplicationController
     @campaign = current_user.campaigns.new
     @campaign.create(campaign_params)
 
-    respond_with @campaign, location: -> { campaign_graph_path(@campaign) }
+    respond_with @campaign, location: -> { campaign_graph_path @campaign }
   end
 
   def edit
@@ -19,7 +19,7 @@ class CampaignsController < ApplicationController
     @campaign = Campaign.find(params[:id])
     @campaign.update(campaign_params)
 
-    respond_with @campaign, location: -> { campaign_graph_path(@campaign) }
+    respond_with @campaign, location: -> { campaign_graph_path @campaign }
   end
 
   private
