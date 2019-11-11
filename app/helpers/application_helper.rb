@@ -1,8 +1,8 @@
 module ApplicationHelper
 
-  def bulma_form_for(object, *args, **opts, &block)
+  def bulma_form_for(object, **opts, &block)
     opts.merge! builder: SimpleForm::BulmaFormBuilder
-    simple_form_for(object, *args, **opts, &block)
+    simple_form_for(object, **opts, &block)
   end
 
   def cancel_button(text = "Cancel", **actions)
