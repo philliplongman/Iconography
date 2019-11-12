@@ -14,9 +14,9 @@ nav.navbar.is-fixed-top aria-label="main navigation" role="navigation"
       .navbar-item.has-dropdown.is-hoverable
         a.navbar-link My Campaigns
         .navbar-dropdown
-          - @campaign_menu.find_each do |campaign|
+          - @campaigns.find_each do |campaign|
             = link_to campaign.name, campaign_graph_path(campaign), class: "navbar-item"
-          - if @campaign_menu.empty?
+          - if @campaigns.empty?
             .navbar-item.has-text-grey-light No campaigns to display
           hr.navbar-divider
           a.navbar-item href=new_campaign_path

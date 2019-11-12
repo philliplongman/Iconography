@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
   private
 
   def load_campaigns
-    @campaign_menu = current_user&.campaigns || Campaign.none
+    @campaigns = current_user&.campaigns || Campaign.none
   end
 
 end
