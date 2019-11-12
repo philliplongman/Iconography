@@ -6,4 +6,4 @@
 
     .form-actions
       = f.button :submit
-      = cancel_button(new: :root, edit: campaign_graph_path(@campaign))
+      = cancel_button new: :root, edit: [@campaign, :graph]

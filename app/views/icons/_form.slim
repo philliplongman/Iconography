@@ -26,4 +26,4 @@
 
     .form-actions
       = f.button :submit
-      = cancel_button(new: campaign_icons_path(@campaign), edit: @age_icon)
+      = cancel_button new: [@campaign, :icons], edit: [@campaign, @age_icon]
