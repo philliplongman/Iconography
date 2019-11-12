@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   resources :campaigns, only: %i[new create edit update] do
     resource :graph, only: %i[show]
-    resources :icons, only: %i[index show new create]
+    resources :icons, except: %i[destroy]
   end
 
 end

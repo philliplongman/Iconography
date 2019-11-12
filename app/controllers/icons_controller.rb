@@ -22,6 +22,19 @@ class IconsController < ApplicationController
     respond_with @age_icon, location: -> { campaign_icons_path @campaign }
   end
 
+  def edit
+    @campaign = Campaign.find(params[:campaign_id])
+    @age_icon = Icon.find(params[:id])
+  end
+
+  def update
+    @campaign = Campaign.find(params[:campaign_id])
+    @age_icon = Icon.find(params[:id])
+    @age_icon.update(icon_params)
+
+    respond_with @campaign, @age_icon
+  end
+
   private
 
   def icon_params
