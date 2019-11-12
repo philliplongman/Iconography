@@ -8,12 +8,15 @@
             label.label Portrait
             figure.age-icon-portrait.image.is-square
               = image_tag "portrait-placeholder"
-          = f.input :quote
+          = f.input :quote,
+            icons: { left: "fas quote-left", right: "fas quote-right" },
+            control_wrapper_html: { class: "control has-icons-left has-icons-right" }
           = f.input :summary, as: :text
           = f.input :usual_location
           = f.input :common_knowledge
 
         .is-divider-vertical.is-hidden-touch
+
         .column
           = f.input :adventurers, label: "Adventurers & the Icon"
           = f.input :allies
