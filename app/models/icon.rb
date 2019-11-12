@@ -30,6 +30,4 @@ class Icon < ApplicationRecord
   validates :name, uniqueness: { scope: :campaign }
   validates :summary, length: { maximum: 1000 }
 
-  scope :sorted, -> { order :name }
-
 end

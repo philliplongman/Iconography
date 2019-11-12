@@ -1,8 +1,8 @@
 class IconsController < ApplicationController
 
   def index
-    @campaign = Campaign.find(params[:campaign_id])
-    @age_icons = @campaign.icons.sorted
+    @campaign = Campaign.includes(:icons).find(params[:campaign_id])
+    @age_icons = @campaign.icons
   end
 
   def new
