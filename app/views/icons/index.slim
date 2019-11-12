@@ -18,6 +18,6 @@
                       figure.age-icon-portrait.image.is-128x128
                         = image_tag "portrait-placeholder", class: "is-rounded"
                     .column
-                      .age-icon-info.content
-                        h4.title.is-4.is-fancy = age_icon.name
-                        p = age_icon.summary
+                      .age-icon-info
+                        h4.name.title.is-4.is-fancy = age_icon.name
+                        p.summary = age_icon.summary

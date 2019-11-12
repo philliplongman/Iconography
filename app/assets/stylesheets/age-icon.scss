@@ -28,6 +28,10 @@
   max-height: 14.25rem;
 }
 
-.age-icon-info .title {
-  margin-bottom: .5rem
+.age-icon-info .name {
+  margin-bottom: .5rem;
+}
+
+.age-icon-info .summary {
+  color: $text;
 }

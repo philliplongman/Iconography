@@ -24,11 +24,6 @@ $light:   $grey-lighter;
 
 // Text ------------------------------------------------------------------------
 
-// don't change the color of content inside a link
-a .content {
-  color: $text;
-}
-
 .content .title:not(:last-child) {
   margin-bottom: 1rem;
   margin-top: 2rem;
@@ -50,7 +45,7 @@ $divider-font-size:	        0.75rem;
 $divider-color:	            $grey-light;
 
 .is-divider {
-  border-width: 0.075rem;
+  border-width: 0.075rem !important;
 }
 
 .is-divider-vertical::before {
