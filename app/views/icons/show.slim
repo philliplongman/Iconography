@@ -1,0 +1,46 @@
+= render layout: "campaigns/header", locals: { tab: :icons }
+  section.section
+    .container.view-title.standard-width
+      .columns
+        .column.is-11
+          h3.title.is-spaced.is-fancy.is-3 = @age_icon.name
+          h5.subtitle.is-5 "#{@age_icon.quote}"
+        .column.is-1
+          .edit
+            = link_to ""
+              span.icon.is-medium = icon "fas", "pencil-alt"
+              | Edit
+
+  section.section
+    .container
+      .columns.is-variable.is-8
+        .column.is-8
+          .content
+            p = @age_icon.summary
+
+            h5.title.is-5.is-fancy Usual Location
+            p = @age_icon.usual_location
+
+            h5.title.is-5.is-fancy Common Knowledge
+            p = @age_icon.common_knowledge
+
+            h5.title.is-5.is-fancy Adventurers & the Icon
+            p = @age_icon.adventurers
+
+            h5.title.is-5.is-fancy Allies
+            p = @age_icon.allies
+
+            h5.title.is-5.is-fancy Enemies
+            p = @age_icon.enemies
+
+            h5.title.is-5.is-fancy History
+            p = @age_icon.history
+
+            h5.title.is-5.is-fancy The True Danger
+            p = @age_icon.true_danger
+
+        .is-divider-vertical.is-hidden-touch.is-paddingless
+
+        .column.is-4
+          figure.age-icon-portrait.image.is-square
+            = image_tag "portrait-placeholder"

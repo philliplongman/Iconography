@@ -5,6 +5,11 @@ class IconsController < ApplicationController
     @age_icons = @campaign.icons
   end
 
+  def show
+    @campaign = Campaign.find(params[:campaign_id])
+    @age_icon = Icon.find(params[:id])
+  end
+
   def new
     @campaign = Campaign.find(params[:campaign_id])
     @age_icon = Icon.new
