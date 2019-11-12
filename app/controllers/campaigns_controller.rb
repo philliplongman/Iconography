@@ -5,18 +5,17 @@ class CampaignsController < ApplicationController
   end
 
   def create
-    @campaign = current_user.campaigns.new
-    @campaign.create(campaign_params)
+    @campaign = @campaigns.create(campaign_params)
 
     respond_with @campaign, location: -> { campaign_graph_path @campaign }
   end
 
   def edit
-    @campaign = Campaign.find(params[:id])
+    @campaign = @campaigns.find(params[:id])
   end
 
   def update
-    @campaign = Campaign.find(params[:id])
+    @campaign = @campaigns.find(params[:id])
     @campaign.update(campaign_params)
 
     respond_with @campaign, location: -> { campaign_graph_path @campaign }
