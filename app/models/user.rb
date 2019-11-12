@@ -21,7 +21,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable, :recoverable,
     :rememberable, :validatable
 
-  has_many :campaigns, dependent: :destroy
+  has_many :campaigns, -> { order :name }, dependent: :destroy
 
   validates :email, presence: true
   validates :email, uniqueness: true
