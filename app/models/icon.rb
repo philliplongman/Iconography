@@ -26,8 +26,11 @@
 class Icon < ApplicationRecord
   belongs_to :campaign, touch: true
 
-  validates :name, presence: true
-  validates :name, uniqueness: { scope: :campaign }
-  validates :summary, length: { maximum: 1000 }
+  has_many :icons_domains, dependent: :destroy
+  has_many :domains, through: :icons_domains
+
+  validates :campaign,  presence: true
+  validates :name,      presence: true
+  validates :name,      uniqueness: { scope: :campaign }
 
 end

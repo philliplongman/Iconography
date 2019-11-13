@@ -18,7 +18,8 @@
 class Campaign < ApplicationRecord
   belongs_to :user
 
-  has_many :icons, -> { order :name }, dependent: :destroy
+  has_many :domains,  -> { order :name }, dependent: :destroy
+  has_many :icons,    -> { order :name }, dependent: :destroy
 
   validates :name, presence: true
   validates :name, uniqueness: { scope: :user }
