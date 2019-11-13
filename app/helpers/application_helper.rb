@@ -13,6 +13,18 @@ module ApplicationHelper
     end
   end
 
+  def delete_button(model, text: nil)
+    opts = {
+      method: :delete,
+      class: "button is-danger is-outlined",
+      data: { confirm: "Are you sure?" }
+    }
+
+    button_to model, opts do
+      text || "Delete #{Array(model).last.model_name.human.downcase}"
+    end
+  end
+
   def link_button(text, path)
     tag.div class: "control" do
       link_to text, path, class: %w[button link-button]
