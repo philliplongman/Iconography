@@ -5,6 +5,7 @@
 #  id          :integer          not null, primary key
 #  name        :string
 #  campaign_id :integer          not null
+#  notes       :text
 #
 # Indexes
 #
@@ -15,7 +16,7 @@
 class Domain < ApplicationRecord
   belongs_to :campaign, touch: true
 
-  has_many :icons_domains, dependent: :destroy
-  has_many :icons, through: :icons_domains
+  has_many :concerns, dependent: :destroy
+  has_many :icons, -> { order :name }, through: :concerns
 
 end

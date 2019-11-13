@@ -26,8 +26,8 @@
 class Icon < ApplicationRecord
   belongs_to :campaign, touch: true
 
-  has_many :icons_domains, dependent: :destroy
-  has_many :domains, through: :icons_domains
+  has_many :concerns, dependent: :destroy
+  has_many :domains, -> { order :name }, through: :concerns
 
   validates :campaign,  presence: true
   validates :name,      presence: true
