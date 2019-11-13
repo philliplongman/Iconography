@@ -1,5 +1,9 @@
 class CampaignsController < ApplicationController
 
+  def show
+    redirect_to campaign_graph_path(campaign_id: params[:id])
+  end
+
   def new
     @campaign = Campaign.new
   end
@@ -7,7 +11,7 @@ class CampaignsController < ApplicationController
   def create
     @campaign = @campaigns.create(campaign_params)
 
-    respond_with @campaign, location: -> { campaign_graph_path @campaign }
+    respond_with @campaign
   end
 
   def edit
@@ -18,7 +22,7 @@ class CampaignsController < ApplicationController
     @campaign = @campaigns.find(params[:id])
     @campaign.update(campaign_params)
 
-    respond_with @campaign, location: -> { campaign_graph_path @campaign }
+    respond_with @campaign
   end
 
   private
