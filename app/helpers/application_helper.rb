@@ -21,7 +21,7 @@ module ApplicationHelper
     }
 
     button_to model, opts do
-      text || "Delete #{Array(model).last.model_name.human.downcase}"
+      text || "Delete #{Array(model).last.model_name}".titleize
     end
   end
 
