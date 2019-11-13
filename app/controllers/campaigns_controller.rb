@@ -9,24 +9,24 @@ class CampaignsController < ApplicationController
   end
 
   def create
-    @campaign = @campaigns.create(campaign_params)
+    @campaign = current_user.campaigns.create(campaign_params)
 
     respond_with @campaign
   end
 
   def edit
-    @campaign = @campaigns.find(params[:id])
+    @campaign = Campaign.find(params[:id])
   end
 
   def update
-    @campaign = @campaigns.find(params[:id])
+    @campaign = Campaign.find(params[:id])
     @campaign.update(campaign_params)
 
     respond_with @campaign
   end
 
   def destroy
-    @campaign = @campaigns.find(params[:id]).destroy
+    @campaign = Campaign.find(params[:id]).destroy
 
     respond_with @campaign, location: -> { root_path }
   end
