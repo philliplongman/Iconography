@@ -67,6 +67,17 @@ textarea {
 
 // Layout ----------------------------------------------------------------------
 
+// attaches footer to bottom
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  & main {
+    flex: 1;
+  }
+}
+
 .container.standard-width {
   max-width: 1152px;
 }
