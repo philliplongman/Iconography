@@ -25,6 +25,12 @@ class CampaignsController < ApplicationController
     respond_with @campaign
   end
 
+  def destroy
+    @campaign = @campaigns.find(params[:id]).destroy
+
+    respond_with @campaign, location: -> { root_path }
+  end
+
   private
 
   def campaign_params

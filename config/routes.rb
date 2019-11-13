@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   root "homes#index"
 
-  resources :campaigns, except: %i[index destroy] do
+  resources :campaigns, except: %i[index] do
     resource :graph, only: %i[show]
     resources :icons, except: %i[destroy]
   end

@@ -7,3 +7,8 @@
     .form-actions
       = f.button :submit
       = cancel_button new: :root, edit: @campaign
+
+  - if @campaign.persisted?
+    .is-divider
+    .form-action
+      = delete_button @campaign
