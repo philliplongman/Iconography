@@ -24,7 +24,7 @@
 #
 
 class Icon < ApplicationRecord
-  belongs_to :campaign
+  belongs_to :campaign, touch: true
 
   validates :name, presence: true
   validates :name, uniqueness: { scope: :campaign }
