@@ -27,3 +27,8 @@
     .form-actions
       = f.button :submit
       = cancel_button new: [@campaign, :icons], edit: [@campaign, @age_icon]
+
+    - if @age_icon.persisted?
+      .is-divider
+      .form-action
+        = delete_button [@campaign, @age_icon]

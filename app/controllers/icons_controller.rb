@@ -35,6 +35,13 @@ class IconsController < ApplicationController
     respond_with @campaign, @age_icon
   end
 
+  def destroy
+    @campaign = Campaign.find(params[:campaign_id])
+    @age_icon = Icon.find(params[:id]).destroy
+
+    respond_with @age_icon, location: -> { campaign_icons_path @campaign }
+  end
+
   private
 
   def icon_params
