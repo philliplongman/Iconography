@@ -15,11 +15,11 @@ section.section
     .campaign-tabs.tabs
       ul
         li class=%(#{"is-active" if tab == :graph})
-          = link_to campaign_graph_path(@campaign)
+          = link_to [@campaign, :graph]
             span.icon.is-small = icon "fas", "project-diagram"
             | Graph
         li class=%(#{"is-active" if tab == :icons})
-          = link_to campaign_icons_path(@campaign)
+          = link_to [@campaign, :icons]
             span.icon.is-small = icon "fas", "crown"
             | The Icons
         li class=%(#{"is-active" if tab == :alliances})
