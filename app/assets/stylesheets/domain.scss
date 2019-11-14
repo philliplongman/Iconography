@@ -1,0 +1,23 @@
+.domain {
+  padding: 1.5rem 1rem;
+}
+
+.domains-collection .domain .icon-list {
+  color: $grey-dark;
+}
+
+.domains-collection .domain .title {
+  margin-bottom: .5rem;
+}
+
+.domains-collection .is-divider {
+  margin: 0 0 .5rem;
+
+  &:first-of-type {
+    display: none;
+  }
+
+  &.is-hidden-touch {
+    margin: 0 1rem .5rem;
+  }
+}

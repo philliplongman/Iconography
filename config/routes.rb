@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   resources :campaigns, except: %i[index] do
     resource :graph, only: %i[show]
+
+    resources :domains, only: %i[index]
     resources :icons
   end
 

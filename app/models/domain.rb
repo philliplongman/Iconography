@@ -19,4 +19,8 @@ class Domain < ApplicationRecord
   has_many :concerns, dependent: :destroy
   has_many :icons, -> { order :name }, through: :concerns
 
+  def icon_names
+    icons.pluck(:name)
+  end
+
 end

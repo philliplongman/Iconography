@@ -1,0 +1,18 @@
+= render layout: "campaigns/header", locals: { tab: :domains }
+  .buttons.is-right
+    = link_to "", class: "button is-primary is-rounded"
+      span.icon.small = icon("fas", "plus")
+      span Add a new Domain
+  .domains-collection
+    .tile.is-ancestor.is-vertical
+      - @domains.each do |domain|
+        .is-divider.is-hidden-mobile
+        .tile.is-parent
+          .tile.is-child.is-12
+            .domain
+              = link_to ""
+                .columns
+                  .column.is-4
+                    h4.title.is-4.is-fancy = domain.name
+                  .column.is-8
+                    p.icon-list = domain.icon_names.join(", ")
