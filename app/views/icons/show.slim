@@ -5,7 +5,10 @@
         .column.is-11
           h3.title.is-spaced.is-fancy.is-3 = @age_icon.name
           - if @age_icon.quote.present?
-            h5.subtitle.is-5 "#{@age_icon.quote}"
+            h5.age-icon-quote.subtitle.is-5
+              span.icon.is-small = icon "fas", "quote-left"
+              span.text = @age_icon.quote
+              span.icon.is-small = icon "fas", "quote-right"
         .column.is-1
           .edit
             = link_to edit_campaign_icon_path(@campaign, @age_icon)
