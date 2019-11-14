@@ -6,6 +6,6 @@
   .age-icon-collection
     .tile.is-ancestor.is-vertical
       - @age_icons.in_groups_of(2, false) do |pair|
-        .is-divider.is-hidden-touch
+        .is-divider.is-hidden-mobile
         .tile.is-parent
           = render partial: "icon_tile", collection: pair, as: :age_icon
