@@ -7,7 +7,7 @@ class IconsController < ApplicationController
 
   def show
     @campaign = Campaign.find(params[:campaign_id])
-    @age_icon = Icon.find(params[:id])
+    @age_icon = Icon.includes(:domains).find(params[:id])
   end
 
   def new

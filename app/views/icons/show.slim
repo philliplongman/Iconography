@@ -53,3 +53,8 @@
         .column.is-4
           figure.age-icon-portrait.image.is-square
             = image_tag "portrait-placeholder"
+          .content
+            h5.title.is-5.is-fancy Concerns
+            ul
+              - @age_icon.domain_names.each do |name|
+                li = name

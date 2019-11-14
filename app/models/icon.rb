@@ -33,4 +33,8 @@ class Icon < ApplicationRecord
   validates :name,      presence: true
   validates :name,      uniqueness: { scope: :campaign }
 
+  def domain_names
+    domains.where.not(name: "Overall").pluck(:name)
+  end
+
 end
