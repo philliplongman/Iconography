@@ -1,6 +1,6 @@
 = render layout: "campaigns/header", locals: { tab: :domains }
   .buttons.is-right
-    = link_to "", class: "button is-primary is-rounded"
+    = link_to new_campaign_domain_path(@campaign), class: "button is-primary is-rounded"
       span.icon.small = icon("fas", "plus")
       span Add a new Domain
   .domains-collection

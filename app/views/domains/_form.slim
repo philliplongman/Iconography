@@ -1,0 +1,14 @@
+.campaign-form
+  = bulma_form_for [@campaign, @domain] do |f|
+    .form-inputs
+      = f.input :name
+      = f.input :notes
+
+    .form-actions
+      = f.button :submit
+      = cancel_button new: @domains, edit: @domains
+
+  - if @domain.persisted?
+    .is-divider
+    .form-action
+      = delete_button @domain
