@@ -1,0 +1,184 @@
+- domain: Overall
+  icons:
+    - The Archmage
+    - The Crusader
+    - The Diabolist
+    - The Dwarf King
+    - The Elf Queen
+    - The Emperor
+    - The Great Gold Wyrm
+    - The High Druid
+    - The Lich King
+    - The Orc Lord
+    - The Priestess
+    - The Prince of Shadows
+    - The Three
+
+- domain: Arcane Magic
+  icons:
+    - The Archmage
+    - The Diabolist
+    - The Elf Queen
+    - The Lich King
+    - The Three
+
+- domain: Civilization
+  icons:
+    - The Archmage
+    - The Dwarf King
+    - The Elf Queen
+    - The Emperor
+    - The Great Gold Wyrm
+    - The High Druid
+    - The Orc Lord
+    - The Priestess
+    - The Three
+
+- domain: Demons & Demonology
+  icons:
+    - The Archmage
+    - The Crusader
+    - The Diabolist
+    - The Emperor
+    - The Great Gold Wyrm
+    - The Priestess
+
+- domain: Divine Magic
+  icons:
+    - The Crusader
+    - The Great Gold Wyrm
+    - The High Druid
+    - The Priestess
+
+- domain: Dragons
+  icons:
+    - The Elf Queen
+    - The Emperor
+    - The Great Gold Wyrm
+    - The Lich King
+    - The Three
+
+- domain: Dwarven & Elvenkind
+  icons:
+    - The Dwarf King
+    - The Elf Queen
+    - The Emperor
+    - The Orc Lord
+
+- domain: Good & Evil
+  icons:
+    - The Archmage
+    - The Crusader
+    - The Diabolist
+    - The Emperor
+    - The Great Gold Wyrm
+    - The Lich King
+    - The Orc Lord
+    - The Priestess
+    - The Three
+
+- domain: High Magic
+  icons:
+    - The Archmage
+    - The Diabolist
+    - The Elf Queen
+    - The High Druid
+    - The Lich King
+    - The Priestess
+    - The Three
+
+- domain: Intruige & Dirty Tricks
+  icons:
+    - The Diabolist
+    - The Elf Queen
+    - The Prince of Shadows
+    - The Three
+
+- domain: Money & Treasure
+  icons:
+    - The Archmage
+    - The Dwarf King
+    - The Prince of Shadows
+    - The Three
+
+- domain: Monsters
+  icons:
+    - The Archmage
+    - The High Druid
+    - The Orc Lord
+    - The Three
+
+- domain: Nature
+  icons:
+    - The Archmage
+    - The Elf Queen
+    - The Emperor
+    - The High Druid
+    - The Orc Lord
+
+- domain: Necromancy & the Undead
+  icons:
+    - The Archmage
+    - The Emperor
+    - The Great Gold Wyrm
+    - The Lich King
+    - The Priestess
+    - The Prince of Shadows
+    - The Three
+
+- domain: Orcs
+  icons:
+    - The Dwarf King
+    - The Elf Queen
+    - The Emperor
+    - The High Druid
+    - The Lich King
+    - The Orc Lord
+
+- domain: Order & Chaos
+  icons:
+    - The Archmage
+    - The Crusader
+    - The Diabolist
+    - The Dwarf King
+    - The Elf Queen
+    - The Emperor
+    - The Great Gold Wyrm
+    - The High Druid
+    - The Lich King
+    - The Orc Lord
+    - The Priestess
+    - The Prince of Shadows
+    - The Three
+
+- domain: Religion & the Gods
+  icons:
+    - The Crusader
+    - The Diabolist
+    - The Great Gold Wyrm
+    - The High Druid
+    - The Priestess
+    - The Three
+
+- domain: The Empire
+  icons:
+    - The Archmage
+    - The Diabolist
+    - The Dwarf King
+    - The Elf Queen
+    - The Emperor
+    - The Great Gold Wyrm
+    - The High Druid
+    - The Lich King
+    - The Orc Lord
+    - The Priestess
+    - The Three
+
+- domain: War & Armies
+  icons:
+    - The Crusader
+    - The Dwarf King
+    - The Elf Queen
+    - The Emperor
+    - The Great Gold Wyrm
+    - The Orc Lord
