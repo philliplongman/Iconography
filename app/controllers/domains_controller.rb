@@ -14,7 +14,7 @@ class DomainsController < ApplicationController
     @campaign = @campaigns.find(params[:campaign_id])
     @domain = @campaign.domains.create(domain_params)
 
-    respond_with @domain, location: -> { [@campaign, :domains] }
+    respond_with @domain, location: -> { campaign_domains_path @campaign }
   end
 
   def edit
@@ -27,7 +27,14 @@ class DomainsController < ApplicationController
     @domain = Domain.find(params[:id])
     @domain.update(domain_params)
 
-    respond_with @domain, location: -> { [@campaign, :domains] }
+    respond_with @domain, location: -> { campaign_domains_path @campaign }
+  end
+
+  def destroy
+    @campaign = Campaign.find(params[:campaign_id])
+    @domain = Domain.find(params[:id]).destroy
+
+    respond_with @domain, location: -> { campaign_domains_path @campaign }
   end
 
   private
