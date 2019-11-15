@@ -3,7 +3,7 @@
 # Table name: domains
 #
 #  id          :integer          not null, primary key
-#  name        :string
+#  name        :string           not null
 #  campaign_id :integer          not null
 #  notes       :text
 #
@@ -18,6 +18,9 @@ class Domain < ApplicationRecord
 
   has_many :concerns, dependent: :destroy
   has_many :icons, -> { order :name }, through: :concerns
+
+  validates :name, presence: true
+  validates :name, uniqueness: { scope: :campaign }
 
   def icon_names
     icons.pluck(:name)

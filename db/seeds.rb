@@ -25,7 +25,7 @@ end
 
 # create Domains and Concerns for standard campaign
 standard_concerns_data = YAML.safe_load(
-  File.read("vendor/icon_data/core/concerns.yml"), symbolize_keys: true
+  File.read("vendor/icon_data/core/concerns.yml"), symbolize_names: true
 )
 
 standard_concerns_data.each do |concern|
