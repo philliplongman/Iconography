@@ -6,9 +6,9 @@
 
     .form-actions
       = f.button :submit
-      = cancel_button new: @domains, edit: @domains
+      = cancel_button new: [@campaign, @domains], edit: [@campaign, @domains]
 
   - if @domain.persisted?
     .is-divider
     .form-action
-      = delete_button @domain
+      = delete_button [@campaign, @domain]

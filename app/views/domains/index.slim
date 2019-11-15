@@ -10,7 +10,7 @@
         .tile.is-parent
           .tile.is-child.is-12
             .domain
-              = link_to ""
+              = link_to edit_campaign_domain_path(@campaign, domain)
                 .columns
                   .column.is-4
                     h4.title.is-4.is-fancy = domain.name

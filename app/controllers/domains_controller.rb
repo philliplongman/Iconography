@@ -17,6 +17,19 @@ class DomainsController < ApplicationController
     respond_with @domain, location: -> { [@campaign, :domains] }
   end
 
+  def edit
+    @campaign = @campaigns.find(params[:campaign_id])
+    @domain = Domain.find(params[:id])
+  end
+
+  def update
+    @campaign = @campaigns.find(params[:campaign_id])
+    @domain = Domain.find(params[:id])
+    @domain.update(domain_params)
+
+    respond_with @domain, location: -> { [@campaign, :domains] }
+  end
+
   private
 
   def domain_params
