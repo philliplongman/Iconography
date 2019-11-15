@@ -12,7 +12,7 @@ SimpleForm.setup do |config|
       bb.use :input, class: "input", error_class: "is-danger"
       bb.use :icons
     end
-    b.optional :full_error, wrap_with: { tag: :p, class: "help is-danger" }
+    b.use :full_error, wrap_with: { tag: :p, class: "help is-danger" }
     b.optional :hint, wrap_with: { tag: :p, class: "help" }
   end
 end
