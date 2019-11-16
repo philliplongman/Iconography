@@ -40,7 +40,7 @@ class DomainsController < ApplicationController
   private
 
   def domain_params
-    params.require(:domain).permit(:name, :notes)
+    params.require(:domain).permit(:name, :notes, icon_ids: [])
   end
 
 end

@@ -1,8 +1,10 @@
-.campaign-form
+.domain-form
   = bulma_form_for [@campaign, @domain] do |f|
     .form-inputs
       = f.input :name
       = f.input :notes
+      = f.label :icons, "Concerned Icons", class: "label"
+      = f.association :icons, as: :check_boxes, wrapper: :inline_checkbox, label: ""
 
     .form-actions
       = f.button :submit

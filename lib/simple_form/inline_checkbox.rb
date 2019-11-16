@@ -5,8 +5,8 @@ SimpleForm.setup do |config|
     b.optional :readonly
     b.wrapper tag: :div, class: "control" do |bb|
       bb.wrapper tag: :label, class: "checkbox" do |bbb|
-        bbb.use :input, type: "checkbox"
         bbb.use :label_text
+        bbb.use :input, type: "checkbox"
       end
       bb.use :full_error, wrap_with: { tag: :p, class: "help is-danger" }
       bb.use :hint, wrap_with: { tag: :p, class: "help" }
