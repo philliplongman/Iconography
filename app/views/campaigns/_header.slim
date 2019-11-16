@@ -26,10 +26,10 @@ section.section
           = link_to [@campaign, :domains]
             span.icon.is-small = icon "fas", "hat-wizard"
             | Domains & Concerns
-        li class=%(#{"is-active" if tab == :alliances})
+        li class=%(#{"is-active" if tab == :relationships})
           a
             span.icon.is-small = icon "fas", "scroll"
-            | Alliances
+            | Relationships
 
     .content-box.box
       == yield
