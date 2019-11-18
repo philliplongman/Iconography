@@ -35,5 +35,12 @@ module Iconography
     # Don't generate system test files.
     config.generators.system_tests = nil
 
+    # Add custom global helper methods to the console.
+    console do
+      # For more information, see "https://blog.nhocki.com/2015/06/03/add-helper-methods-to-your-rails-console-with-pry"
+      require Rails.root.join("lib/console_methods")
+      TOPLEVEL_BINDING.eval("self").extend(ConsoleMethods)
+    end
+
   end
 end
