@@ -27,7 +27,7 @@ section.section
             span.icon.is-small = icon "fas", "hat-wizard"
             | Domains & Concerns
         li class=%(#{"is-active" if tab == :relationships})
-          a
+          = link_to [@campaign, :relationships]
             span.icon.is-small = icon "fas", "scroll"
             | Relationships
 

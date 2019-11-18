@@ -31,6 +31,12 @@ class CampaignsController < ApplicationController
     respond_with @campaign, location: -> { root_path }
   end
 
+  def relationships
+    id = params[:campaign_id]
+    domain = Domain.find_by(campaign_id: id, name: "Overall")
+    redirect_to campaign_domain_relationships_path(id, domain.id)
+  end
+
   private
 
   def campaign_params
