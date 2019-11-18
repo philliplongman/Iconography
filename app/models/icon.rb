@@ -28,10 +28,14 @@ class Icon < ApplicationRecord
 
   has_many :concerns, dependent: :destroy
   has_many :domains, -> { order :name }, through: :concerns
+  has_many :icons_relationships, dependent: :destroy
+  has_many :relationships, through: :icons_relationships
 
   validates :campaign,  presence: true
   validates :name,      presence: true
   validates :name,      uniqueness: { scope: :campaign }
+
+  before_destroy -> { relationships.destroy_all }, prepend: true
 
   def domain_names
     domains.where.not(name: "Overall").pluck(:name)

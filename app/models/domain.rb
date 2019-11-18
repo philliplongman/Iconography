@@ -18,6 +18,7 @@ class Domain < ApplicationRecord
 
   has_many :concerns, dependent: :destroy
   has_many :icons, -> { order :name }, through: :concerns
+  has_many :relationships, dependent: :destroy
 
   validates :name, presence: true
   validates :name, uniqueness: { scope: :campaign }

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_15_013503) do
+ActiveRecord::Schema.define(version: 2019_11_16_033330) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -60,6 +60,26 @@ ActiveRecord::Schema.define(version: 2019_11_15_013503) do
     t.index ["name", "campaign_id"], name: "index_icons_on_name_and_campaign_id", unique: true
   end
 
+  create_table "icons_relationships", force: :cascade do |t|
+    t.bigint "relationship_id", null: false
+    t.bigint "icon_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["icon_id"], name: "index_icons_relationships_on_icon_id"
+    t.index ["relationship_id", "icon_id"], name: "index_icons_relationships_on_relationship_id_and_icon_id", unique: true
+    t.index ["relationship_id"], name: "index_icons_relationships_on_relationship_id"
+  end
+
+  create_table "relationships", force: :cascade do |t|
+    t.bigint "domain_id", null: false
+    t.integer "attitude", null: false
+    t.boolean "major", default: true, null: false
+    t.text "notes"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["domain_id"], name: "index_relationships_on_domain_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -77,4 +97,7 @@ ActiveRecord::Schema.define(version: 2019_11_15_013503) do
   add_foreign_key "concerns", "icons", on_delete: :cascade
   add_foreign_key "domains", "campaigns", on_delete: :cascade
   add_foreign_key "icons", "campaigns", on_delete: :cascade
+  add_foreign_key "icons_relationships", "icons", on_delete: :cascade
+  add_foreign_key "icons_relationships", "relationships", on_delete: :cascade
+  add_foreign_key "relationships", "domains", on_delete: :cascade
 end
