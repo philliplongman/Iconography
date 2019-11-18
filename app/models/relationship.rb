@@ -23,9 +23,17 @@ class Relationship < ApplicationRecord
   has_many :icons_relationships, dependent: :destroy
   has_many :icons, through: :icons_relationships
 
-  validates :domain,  presence: true
-  validates :type,    presence: true
-  validates :major,   inclusion: { in: [true, false] }
-  validates :type,    inclusion: { in: attitudes }
+  validates :domain,    presence: true
+  validates :attitude,  presence: true
+  validates :major,     inclusion: { in: [true, false] }
+  validates :attitude,  inclusion: { in: attitudes }
+
+  validate :must_have_two_icons
+
+  private
+
+  def must_have_two_icons
+    errors.add :icons, "must have exactly two Icon associations" if icons.count != 2
+  end
 
 end
