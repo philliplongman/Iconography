@@ -21,7 +21,7 @@ class Relationship < ApplicationRecord
   belongs_to :domain, touch: true
 
   has_many :icons_relationships, dependent: :destroy
-  has_many :icons, through: :icons_relationships
+  has_many :icons, -> { order :name }, through: :icons_relationships
 
   validates :domain,    presence: true
   validates :attitude,  presence: true

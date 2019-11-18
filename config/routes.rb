@@ -7,8 +7,9 @@ Rails.application.routes.draw do
   resources :campaigns, except: %i[index] do
     get :relationships, to: "campaigns#relationships"
     resource :graph, only: %i[show]
-
-    resources :domains, only: %i[index new create edit update destroy]
+    resources :domains, except: %i[show] do
+      resources :relationships, only: %i[index]
+    end
     resources :icons
   end
 
