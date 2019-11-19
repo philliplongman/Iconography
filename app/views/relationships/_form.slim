@@ -1,0 +1,34 @@
+.relationship-form
+  = bulma_form_for [@campaign, @domain, @relationship] do |f|
+    .form-inputs
+      = simple_fields_for "relationship[icon_ids]" do |fi|
+        .field
+          label.label Icons
+          .columns
+            .column.is-narrow
+              .control
+                .select
+                  = fi.input_field "", collection: @domain.icons
+            .column.is-narrow
+              .control
+                .select
+                  = fi.input_field "", collection: @domain.icons
+          p.help.is-danger = @relationship.errors[:icons].first
+
+      .field
+        label.label Attitude towards each other
+        .control
+          .select
+            = f.input_field :attitude, collection: Relationship.attitudes.keys
+        p.help.is-danger = @relationship.errors[:attitude].first
+
+      .field
+        label.label Relationship intensity
+        .control
+          .select
+            = f.input_field :major, collection: [["Major", "true"], ["Minor", "false"]]
+        p.help.is-danger = @relationship.errors[:major].first
+
+    .form-actions
+      = f.button :submit
+      = cancel_button new: [@campaign, @domain, :relationships], edit: [@campaign, @domain, :relationships]

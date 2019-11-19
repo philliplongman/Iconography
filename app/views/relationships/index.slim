@@ -1,6 +1,6 @@
 = render layout: "campaigns/header", locals: { tab: :relationships }
   .buttons.is-right
-    = link_to "", class: "button is-primary is-rounded"
+    = link_to [:new, @campaign, @domain, :relationship], class: "button is-primary is-rounded"
       span.icon.small = icon("fas", "plus")
       span Add a new Relationship
   .relationships-collection

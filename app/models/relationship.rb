@@ -28,12 +28,16 @@ class Relationship < ApplicationRecord
   validates :major,     inclusion: { in: [true, false] }
   validates :attitude,  inclusion: { in: attitudes }
 
-  validate :must_have_two_icons
+  validate :must_have_two_different_icons
 
   private
 
-  def must_have_two_icons
-    errors.add :icons, "must have exactly two Icon associations" if icons.count != 2
+  def must_have_two_different_icons
+    if icons.length == 2 && icons.first == icons.second
+      errors.add :icons, "Icons must be different"
+    elsif icons.length != 2
+      errors.add :icons, "must have two Icon associations"
+    end
   end
 
 end
