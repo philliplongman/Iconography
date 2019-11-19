@@ -24,10 +24,26 @@ class RelationshipsController < ApplicationController
       location: -> { campaign_domain_relationships_path(@campaign, @domain) }
   end
 
+  def edit
+    @campaign = @campaigns.find(params[:campaign_id])
+    @domain = @campaign.domains.find(params[:domain_id])
+    @relationship = @domain.relationships.find(params[:id])
+  end
+
+  def update
+    @campaign = @campaigns.find(params[:campaign_id])
+    @domain = @campaign.domains.find(params[:domain_id])
+    @relationship = @domain.relationships.find(params[:id])
+    @relationship.update(relationship_params)
+
+    respond_with @relationship,
+      location: -> { campaign_domain_relationships_path(@campaign, @domain) }
+  end
+
   private
 
   def relationship_params
-    params.require(:relationship).permit(:attitude, :major, icon_ids: [])
+    params.require(:relationship).permit(:attitude, :major, :notes, icon_ids: [])
   end
 
 end

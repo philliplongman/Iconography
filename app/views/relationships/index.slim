@@ -7,7 +7,10 @@
     h3.title.is-3.is-fancy = @domain.name
     .content
       - @relationships.each do |relationship|
-        p
-          = relationship.icons.map(&:name).join(" & ")
-          = " (#{relationship.attitude},"
-          = " #{relationship.major ? "major" : "minor"})"
+        = link_to [:edit, @campaign, @domain, relationship]
+          h5.title.is-5
+            = relationship.icons.map(&:name).join(" & ")
+            = " (#{relationship.attitude},"
+            = " #{relationship.major ? "major" : "minor"})"
+          p.has-text-grey-dark
+            = relationship.notes

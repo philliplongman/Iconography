@@ -8,11 +8,19 @@
             .column.is-narrow
               .control
                 .select
-                  = fi.input_field "", collection: @domain.icons
+                  = fi.input_field "",
+                    collection: @domain.icons,
+                    selected: @relationship.icon_ids.first,
+                    disabled: @relationship.persisted?
+
             .column.is-narrow
               .control
                 .select
-                  = fi.input_field "", collection: @domain.icons
+                  = fi.input_field "",
+                    collection: @domain.icons,
+                    selected: @relationship.icon_ids.second,
+                    disabled: @relationship.persisted?
+
           p.help.is-danger = @relationship.errors[:icons].first
 
       .field
@@ -29,6 +37,13 @@
             = f.input_field :major, collection: [["Major", "true"], ["Minor", "false"]]
         p.help.is-danger = @relationship.errors[:major].first
 
+      = f.input :notes
+
     .form-actions
       = f.button :submit
       = cancel_button new: [@campaign, @domain, :relationships], edit: [@campaign, @domain, :relationships]
+
+  - if @relationship.persisted?
+    .is-divider
+    .form-actions
+      = delete_button [@campaign, @domain, @relationship]
