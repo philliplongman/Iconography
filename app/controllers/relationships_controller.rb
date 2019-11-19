@@ -40,6 +40,16 @@ class RelationshipsController < ApplicationController
       location: -> { campaign_domain_relationships_path(@campaign, @domain) }
   end
 
+  def destroy
+    @campaign = @campaigns.find(params[:campaign_id])
+    @domain = @campaign.domains.find(params[:domain_id])
+    @relationship = @domain.relationships.find(params[:id])
+    @relationship.destroy
+
+    respond_with @relationship,
+      location: -> { campaign_domain_relationships_path(@campaign, @domain) }
+  end
+
   private
 
   def relationship_params
